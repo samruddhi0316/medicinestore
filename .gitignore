@@ -1,0 +1,11 @@
+node_modules/
+build/
+target/
+bin/
+.settings/
+.classpath
+.project
+.idea/
+*.iml
+.vscode/
+.env

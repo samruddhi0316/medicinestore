@@ -1,0 +1,513 @@
+/* =========================
+   Global Style
+========================= */
+
+*{
+    box-sizing:border-box;
+}
+
+
+body{
+
+    margin:0;
+
+    font-family:'Segoe UI', Arial, sans-serif;
+
+    background:#f1f5f9;
+
+    color:#1e293b;
+
+}
+
+
+
+/* =========================
+   Sidebar
+========================= */
+
+
+.sidebar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:240px;
+
+    height:100vh;
+
+    background:linear-gradient(
+        180deg,
+        #2563eb,
+        #1e3a8a
+    );
+
+    color:white;
+
+    padding:25px 20px;
+
+    box-shadow:5px 0 15px rgba(0,0,0,0.2);
+
+    border-right:3px solid #60a5fa;
+
+}
+
+
+
+.sidebar h2{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+    font-size:26px;
+
+}
+
+
+
+.sidebar ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+
+
+.sidebar li{
+
+    margin:18px 0;
+
+}
+
+
+
+.sidebar a{
+
+    display:block;
+
+    padding:12px 15px;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:10px;
+
+    transition:0.3s;
+
+    font-size:16px;
+
+}
+
+
+
+/* Sidebar Hover */
+
+.sidebar a:hover{
+
+    background:white;
+
+    color:#2563eb;
+
+    transform:translateX(10px);
+
+}
+
+
+
+/* =========================
+   Navbar
+========================= */
+
+
+.navbar{
+
+    margin-left:240px;
+
+    height:70px;
+
+    background:white;
+
+    display:flex;
+
+    align-items:center;
+
+    padding-left:35px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+
+    border-bottom:2px solid #dbeafe;
+
+}
+
+
+
+.navbar h2{
+
+    color:#1e40af;
+
+}
+
+
+
+/* =========================
+   Main Content
+========================= */
+
+
+.content{
+
+    margin-left:240px;
+
+    padding:35px;
+
+    animation:fadeIn 0.5s ease-in-out;
+
+}
+
+
+
+/* =========================
+   Dashboard Cards
+========================= */
+
+
+.dashboard-container{
+
+    display:flex;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.card{
+
+    background:white;
+
+    width:240px;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    border:2px solid #e2e8f0;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
+
+    transition:0.3s;
+
+    cursor:pointer;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#2563eb;
+
+    box-shadow:0 15px 30px rgba(37,99,235,0.3);
+
+}
+
+
+
+.card h2{
+
+    color:#2563eb;
+
+}
+
+
+
+
+
+/* =========================
+   Tables
+========================= */
+
+
+table{
+
+    background:white;
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+    border:2px solid #2563eb;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+
+
+th{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:15px;
+
+    border:1px solid #1d4ed8;
+
+}
+
+
+
+td{
+
+    padding:12px;
+
+    text-align:center;
+
+    border:1px solid #cbd5e1;
+
+}
+
+
+
+tr:hover{
+
+    background:#eff6ff;
+
+}
+
+
+
+
+
+/* =========================
+   Buttons
+========================= */
+
+
+button{
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    margin:5px;
+
+    transition:0.3s;
+
+}
+
+
+
+button:hover{
+
+    background:#1d4ed8;
+
+    transform:scale(1.05);
+
+}
+
+
+
+/* Delete Button */
+
+button:last-child{
+
+    background:#dc2626;
+
+}
+
+
+
+button:last-child:hover{
+
+    background:#991b1b;
+
+}
+
+
+
+
+
+/* =========================
+   Forms
+========================= */
+
+
+form{
+
+    background:white;
+
+    padding:30px;
+
+    width:400px;
+
+    border-radius:15px;
+
+    border:2px solid #dbeafe;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+
+}
+
+
+
+form:hover{
+
+    border-color:#2563eb;
+
+}
+
+
+
+
+
+input,
+textarea,
+select{
+
+
+    width:100%;
+
+    padding:12px;
+
+    border:2px solid #cbd5e1;
+
+    border-radius:8px;
+
+    outline:none;
+
+    font-size:15px;
+
+    transition:0.3s;
+
+}
+
+
+
+input:hover,
+textarea:hover,
+select:hover{
+
+    border-color:#60a5fa;
+
+}
+
+
+
+input:focus,
+textarea:focus,
+select:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 8px rgba(37,99,235,0.3);
+
+}
+
+
+
+
+
+/* =========================
+   Animation
+========================= */
+
+
+@keyframes fadeIn{
+
+
+from{
+
+    opacity:0;
+
+    transform:translateY(20px);
+
+}
+
+
+to{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+}
+
+
+
+/* =========================
+   Responsive
+========================= */
+
+
+@media(max-width:768px){
+
+
+.sidebar{
+
+    width:100%;
+
+    height:auto;
+
+    position:relative;
+
+}
+
+
+
+.navbar{
+
+    margin-left:0;
+
+}
+
+
+
+.content{
+
+    margin-left:0;
+
+}
+
+
+
+.dashboard-container{
+
+    justify-content:center;
+
+}
+
+
+}
